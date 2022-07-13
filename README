@@ -1,1 +1,7 @@
+CREATION D'UN RPG EN JAVA 
 
+Il y aura 2 classes pour l'instant : Guerrier et Mage.  
+
+Le but sera de sortir d'un donjon avec un système de Level Up et de combat. 
+
+Pour l'instant je veux que le jeu soti fonctionnel depuis la console avant d'aller vers un modèle 2D.
