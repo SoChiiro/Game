@@ -1,32 +1,39 @@
 package Game;
+import java.util.Random;
 
 public class Class_character {
 
-    int[] currentLevel = {1,2,3,4,5};
-    int[] requiredXP = {20,60,120,240};
+    public int[] currentLevel = {1,2,3,4,5};
+    public int[] requiredXP = {20,60,120,240};
 
-    int XP = 0;
-    int level;
+    public int XP = 0;
+    public int level;
 
-    // ############## CHARACTERS ##############
+    private int HP;
+    private int ATT;
+    private int DEF;
+    private int MANA;
 
-    public class Warrior {
-        int HP = 25;
-        int ATT = 5;
-        int DEF = 10;
-        int VIT = 4;
 
-        int currentLevel = 1;
-
+    public void Mage(int HP, int ATT, int DEF, int MANA) {
+        this.HP = HP;
+        this.ATT = ATT;
+        this.DEF = DEF;
+        this.MANA = MANA;
     }
 
-    public class Mage {
-        int HP = 12;
-        int ATT = 18;
-        int DEF = 6;
-        int VIT = 6;
+    public void Ghoul(int HP, int ATT, int DEF, int MANA) {
+        this.HP = HP;
+        this.ATT = ATT;
+        this.DEF = DEF;
+        this.MANA = MANA;
+    }
 
-        int currentLevel = 1;
+    public void Goblin(int HP, int ATT, int DEF, int MANA) {
+        this.HP = HP;
+        this.ATT = ATT;
+        this.DEF = DEF;
+        this.MANA = MANA;
     }
 
     // ############## LEVEL UP ##############
@@ -46,5 +53,6 @@ public class Class_character {
     public void setLevel(int level){
         this.level = level;
     }
+
 
 }
